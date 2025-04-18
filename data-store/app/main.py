@@ -37,3 +37,7 @@ def add_strumento(payload: dict):
     db.refresh(nuovo)
     db.close()
     return {"status": "aggiunto"}
+
+@app.get("/")
+def read_root():
+    return {"message": "Data Store online!"}
