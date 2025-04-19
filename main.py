@@ -16,7 +16,7 @@ app.add_middleware(
 )
 
 # Gateway verso data-store
-DATA_STORE_URL = "http://data-store:8000"
+DATA_STORE_URL = "https://i-phoqs-data-store.onrender.com"
 
 @app.get("/strumenti")
 def get_strumenti():
